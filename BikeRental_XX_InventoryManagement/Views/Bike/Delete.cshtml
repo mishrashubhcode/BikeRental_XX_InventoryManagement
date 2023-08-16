@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Delete";
+}
+<div class="containershow">
+
+    <h2 style="margin-top: 20px">Please confirm to delete @Model.Brand ?</h2>
+    <p>
+        This action cannot be undone!
+    </p>
+    <nav style="width:40% ; margin:0 auto">
+        <a class="navlink" style="float:left" href="/Bike/Details/@Model.BikeID">Cancel</a>
+        <form method="POST" action="/Bike/Delete/@Model.BikeID">
+            <button class="navlink" style="float:right ; color:red">Confirm Delete</button>
+        </form>
+
+
+    </nav>
+</div>

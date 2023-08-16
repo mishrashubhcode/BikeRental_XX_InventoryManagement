@@ -1,0 +1,28 @@
+﻿@model BikeRental_XX_InventoryManagement.Models.Bikes
+@{
+    ViewBag.Title = "Edit";
+}
+
+<div id="containershow">
+    <nav>
+        <a class="navlink" href="/Bike/List">Back to List of Bikes</a>
+    </nav>
+    <h2>Update Bike</h2>
+    <form method="POST" action="/Bike/Edit">
+        <div>
+            <label>Brand: </label> <input type="text" name="Brand" />
+        </div>
+        <div>
+            <label>Model: </label> <input type="text" name="Model" />
+        </div>
+        <div>
+            <label>Type: </label> <input type="text" name="Type" />
+        </div>
+        <div>
+            <label>Available: </label> <input type="checkbox" name="Type" />
+        </div>
+        <div>
+            <input type="submit" value="Update Bike" />
+        </div>
+    </form>
+</div>

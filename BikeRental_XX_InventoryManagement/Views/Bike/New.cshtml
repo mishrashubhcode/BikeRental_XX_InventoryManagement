@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Add a New Bike</h2>
+<form action="/Bike/Create" method="POST">
+    <div>
+        <label>Brand: </label> <input type="text" name="Brand" />
+    </div>
+    <div>
+        <label>Model: </label> <input type="text" name="Model" />
+    </div>
+    <div>
+        <label>Type: </label> <input type="text" name="Type" />
+    </div>
+    <div>
+        <label>Available: </label> <input type="checkbox" name="Type" />
+    </div>
+    <div>
+        <input type="submit" value="Add Bike" />
+    </div>
+</form>

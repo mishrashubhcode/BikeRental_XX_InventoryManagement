@@ -1,0 +1,21 @@
+﻿@model BikeRental_XX_InventoryManagement.Models.BikeDto
+@{
+    ViewBag.Title = "View";
+}
+
+<div class="containershow">
+    <nav style="width:80% ; margin:0 auto; margin-top:30px">
+        <a class="navlink" href="/Bike/List">Back to List of Bikes</a>
+        <a class="dellink" style="float:right; color:red" href="/Teacher/DeleteConfirm/@Model.BikeID">Delete This Bike</a>
+        <a class="navlink" style="position:center" href="/Bike/Update/@Model.BikeID">Update Bike</a>
+    </nav>
+    <h2>@Model.Brand</h2>
+    <p>
+        <strong>Model:</strong>  @Model.Model <br />
+        <strong>Type:</strong>@Model.Type <br />
+        <strong>Available:</strong>@Model.Available
+
+
+
+    </p>
+</div>

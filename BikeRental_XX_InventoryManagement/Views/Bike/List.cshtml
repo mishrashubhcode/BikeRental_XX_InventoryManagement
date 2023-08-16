@@ -1,0 +1,31 @@
+﻿@model IEnumerable<BikeRental_XX_InventoryManagement.Models.BikeDto>
+@{
+    ViewBag.Title = "List";
+}
+
+
+<div class="containerlist">
+    <nav>
+        <a class="navlinks" href="/Bike/New">New Bike</a>
+    </nav>
+    <h2>List of Bikes</h2>
+
+    <form action="/Bike/List" method="GET">
+        <input type="text" name="SearchKey" />
+        <input type="submit" value="Search" />
+    </form>
+
+
+    @foreach (var bike in Model)
+    {
+
+        <div class="listitem row">
+            <div class="col-md-10">
+                <a href="/Bike/Details/@bike.BikeID">@bike.Brand</a>
+            </div>
+        </div>
+
+
+    }
+
+</div>
